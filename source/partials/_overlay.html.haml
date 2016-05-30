@@ -1,0 +1,23 @@
+.video-overlay
+  .video-wrap
+.overlay
+  .form-wrap
+    %form.signup-form{:action => "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", :method => "POST"}
+      %h2 Let's get started
+      %p Build your Predictable Revenue team now
+      %input{:name => "oid", :type => "hidden", :value => "00D61000000Jgb3"}/
+      %input{:name => "retURL", :type => "hidden", :value => "http://carb.io"}/
+      %input#lead_source{:name => "lead_source", :type => "hidden", :value => "carb.io"}/
+      %input#first_name.interestee-name{:name => "first_name", :placeholder => "First Name", :type => "text"}/
+      %br/
+      %input#last_name.interestee-name{:name => "last_name", :placeholder => "Last Name", :type => "text"}/
+      %br/
+      %input#company.interestee-company{:name => "company", :placeholder => "Company", :type => "text"}/
+      %br/
+      %input#email.interestee-email{:name => "email", :placeholder => "Email", :type => "text"}/
+      %br/
+      %input.btn{:name => "submit", :type => "submit"}/
+  .thanks
+    %p Information submitted!  We will get in touch with you personally to get you started.
+    %button.btn.btn-liner.overlay-closer
+      close this window

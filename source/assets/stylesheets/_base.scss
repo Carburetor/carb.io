@@ -1,0 +1,39 @@
+@import "bourbon/bourbon";
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.8em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: GothamMedium;
+}
+
+.ng-hide {
+  display: none;
+}
+
+span {
+  line-height: 1em;
+}
+
+input[type=text], input[type=number], select, textarea {
+  margin: 0;
+  font-family: GothamBook;
+  @include box-sizing(border-box);
+  outline: none;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #555;
+  line-height: 1em;
+}
+
+@import "colors";
+@import "typography";
+@import "buttons";
+
+a {
+  color: $prime;
+  &:hover {
+    cursor: pointer;
+    color: $prime-dark;
+  }
+}
