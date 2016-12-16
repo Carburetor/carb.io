@@ -10,10 +10,7 @@
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
-    = partial "partials/overlay.html.haml"
-    = partial "partials/header.html.haml"
     = yield
-    = partial "partials/footer.html.haml"
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"
     = google_analytics_tag
